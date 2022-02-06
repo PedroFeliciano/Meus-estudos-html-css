@@ -1,18 +1,49 @@
 body{
   display: flex;
-height: 100vh;
-width: 85%;
+height: 200vh;
+width: 100%;
+
+
+
 }
 
 
 
 
-div{
+ .navbar{
      background-color: blanchedalmond ;
      height:100%;
-     width: 15%;
-border-radius: 20px;
+     width: 20%;
+border-radius: 25px;
 
     }
 
+    .content{
+      width: 85%;
+      height: 100%;
+      border-radius: 20px;
+      background-color: rgb(68, 68, 83);
+    }
+
+
+.conteiner
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.card
+{
+  
+  width: 300px;
+  height: 200px;
+  background: #ccc;
+  border-radius: 25px;
+  
+
+}
 
