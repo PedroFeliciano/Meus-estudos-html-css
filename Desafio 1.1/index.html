@@ -11,21 +11,22 @@
 <body>
 
    <div class="navbar">
-      <div class="logo"><img class="caveira" src="skull-outline.svg" /></div>
-      <div class="btn ativo"> 
+      
+      <div class="logo" onclick="clicado()"><img class="caveira" src="skull-outline.svg" /></div>
+      <div class="btn ativo" onclick="clicado()"> 
       
          <h4>Dashboard</h4>  
        </div> 
        
-       <div class="btn" > 
-           <h4>Analytics</h4>  
+       <div class="btn" onclick="alerta('Analytics')" > 
+           <h4>Analytics </h4>  
         </div> 
 
-        <div class="btn"> 
+        <div class="btn" onclick="alerta('Performance')"> 
             <h4>Performance</h4>  
          </div> 
 
-         <div class="btn"> 
+         <div class="btn" onclick="alerta('alem')"> 
             <h4>Notfication</h4>  
          </div> 
 
@@ -47,6 +48,8 @@
   
 
  
-    
 </body>
+    <script  src="script.js" >
+
+    </script>
 </html>
