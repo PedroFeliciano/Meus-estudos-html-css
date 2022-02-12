@@ -13,26 +13,31 @@
    <div class="navbar">
       
       <div class="logo" onclick="clicado()"><img class="caveira" src="skull-outline.svg" /></div>
-      <div class="btn ativo" onclick="clicado()"> 
-      
-         <h4>Dashboard</h4>  
+     
+      <div class="btn ativo" onclick="toggle(0)"> 
+      <h4>Dashboard</h4>  
        </div> 
        
-       <div class="btn" onclick="alerta('Analytics')" > 
+       <div class="btn" onclick="toggle(1)" > 
            <h4>Analytics </h4>  
         </div> 
 
-        <div class="btn" onclick="alerta('Performance')"> 
+        <div class="btn" onclick="toggle(2)"> 
             <h4>Performance</h4>  
          </div> 
 
-         <div class="btn" onclick="alerta('alem')"> 
+         <div class="btn" onclick="toggle(3)"> 
             <h4>Notfication</h4>  
          </div> 
 
-         <div class="btn"> 
+         <div class="btn" onclick="toggle(4)"> 
             <h4>Settings</h4>  
          </div> 
+
+         <div id="btnUnico" >
+            <h2>BtnUnico</h2>
+
+         </div>
 
       </div>
 <div class="content">
@@ -50,16 +55,20 @@
    
    <div class="navbar2"> 
       
-     <div class="btn2"></div>    
+     <div class="btn2">
+        <h4>Ajuda</h4>
+     </div>    
   
      <div class="btn2"> 
        <h4> configuraçoes</h4>
         </div>    
         
-   <div class="btn2"></div> 
+   <div class="btn2">
+      <h4>privacidade </h4>
+   </div> 
    
-   <div class="btn2"></div> 
-
+   <div class="btn2"> 
+   <h4>patrocinio </h4></div>  
    </div>
 
 </body>

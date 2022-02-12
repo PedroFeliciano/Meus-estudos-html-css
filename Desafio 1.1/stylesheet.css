@@ -162,3 +162,11 @@ height: 100%;
 background: #d83133;
 clip-path: circle(120px at center);
 }
+
+
+/* Alteração Lucas */
+
+#btnUnico{
+  color:white;
+  background-color: blue;
+}
