@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -8,22 +9,11 @@ height: 100vh;
 width: 100%;
 
 
-
 }
 
 
-.navbar2
-{
-  display: inline;
-justify-content: end;
-max-height: 100vh;
 
-align-items:center ;
 
-width: 200px; ;
-background:#ccc ;
-
-}
 
 
 
@@ -39,7 +29,7 @@ font-family: 'Helvetica';
   background-color: #272829 ;
   max-height:100vh;
      max-width: 20%;
-     width: 20%;
+     width: 17%;
      
 
 }
@@ -67,15 +57,34 @@ height: 40px;
 
 }
 
+.marca
+{
+  display: flex;
+  margin: 30px;
+align-items: center;
 
+}
+.nomemarca
+{
+  justify-content:center;
+  display: flex;
+height: 30px;
+
+width: 110px ;
+background-color:rgb(117, 204, 219) ;
+margin-left: -29px;
+border-radius: 30px;
+align-items: center;
+font-family:Righteous ;
+}
 
 .logo
 {
-  margin: 30px;
+  
   display: flex;
   align-items:center ;
   justify-content: center;
-background-color: rgb(87, 223, 139);
+background-color: rgb(25, 221, 156);
 padding: 5px;
 clip-path: circle( );
 
@@ -96,22 +105,7 @@ clip-path: circle( );
 }
 
 
-.btn2
-{
-  display: flex;
-  justify-content:center ;
-  align-items: center;
-  
-  height: 20px;
-  width: 70%;
-  border-radius: 10px ;
 
-  color: #C6DAF1;
-   
-  background-color: #d83133;
-margin: 13px;
- align-self: baseline;
-}
 
 .ativo{
   background-color: rgb(226, 87, 129);}
@@ -122,10 +116,16 @@ margin: 13px;
     {
       width: 85%;
       height: 100%;
-      
       background-color: rgb(68, 68, 83);
     }
+.img-content{
+  
+  height: 100%;
 
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,.5) ,rgba(0,0,0,.5)), url('https://images.pexels.com/photos/7646486/pexels-photo-7646486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); 
+  background-size: cover;
+}
 
 
 
@@ -165,8 +165,3 @@ clip-path: circle(120px at center);
 
 
 /* Alteração Lucas */
-
-#btnUnico{
-  color:white;
-  background-color: blue;
-}
