@@ -9,13 +9,8 @@ height: 100vh;
 width: 100%;
 
 
+
 }
-
-
-
-
-
-
 
  .navbar{
 
@@ -30,8 +25,7 @@ font-family: 'Helvetica';
   max-height:100vh;
      max-width: 20%;
      width: 17%;
-     
-
+    
 }
 
 
@@ -39,6 +33,7 @@ font-family: 'Helvetica';
 {
   background-color: #626e6e;
   color: #FFFFFF;
+  transform:translateX(20px) ;
 }
 
 .conteiner
@@ -101,7 +96,8 @@ clip-path: circle( );
   border-radius: 10px;
   margin: 13px;
   align-self: baseline;
-  
+
+  transition: 0.5s;
 }
 
 
@@ -134,7 +130,8 @@ font-family: -apple-system, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-
 }
 
 
-  
+h1{font-size: 48px;}  
+
 
 
 .card

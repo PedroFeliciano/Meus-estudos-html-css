@@ -13,7 +13,7 @@ window.alert("essa mensagem vem do "+ mensagem)
 }
 
 function toggle(btnIndexador)
-{
+ {
     console.log("entroou na funçao")
 
     var elements = document.querySelectorAll(".btn")
