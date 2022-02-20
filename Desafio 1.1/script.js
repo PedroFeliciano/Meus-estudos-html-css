@@ -70,6 +70,31 @@ circunferencia = PI *raio  * raio + " m2"
 
 console.log(circunferencia)
 
+
+var img1 = "'https://images.pexels.com/photos/7646486/pexels-photo-7646486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+var img2 ="https://images.pexels.com/photos/5560376/pexels-photo-5560376.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+var img3 = "https://images.pexels.com/photos/5560210/pexels-photo-5560210.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+var listaImg = [img1,img2,img3]
+
+let counter = 0;
+function interval()
+{
+    setInterval(function()
+    {
+        var divImgContent = document.querySelector(".img-content")
+        console.log("changed")
+        divImgContent.style.background =  `linear-gradient(rgba(0,0,0,.5) ,rgba(0,0,0,.5)), url('${listaImg[counter]}')`
+        divImgContent.style.backgroundSize = "cover"
+
+        counter = counter + 1;
+        if(counter >2)
+        {
+            counter= 0 
+        } 
+ console.log(counter)
+},4000)
+}
+
 // trocar os valores das variaveis //
 
 let a = 7 
