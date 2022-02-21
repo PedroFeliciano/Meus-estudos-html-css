@@ -167,5 +167,20 @@ background: #d83133;
 clip-path: circle(120px at center);
 }
 
+.skate-content
+{
+display: flex;
+align-items: center;
+justify-content: center;
+   
+}
+
+
+/*esta classe precisa estar de baixo de todas as outras content ( por ler de cima pra baixo)  */ 
+
+.esconder
+{
+  display: none;
+}
 
 /* Alteração Lucas */

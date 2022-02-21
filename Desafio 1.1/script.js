@@ -95,6 +95,31 @@ function interval()
 },4000)
 }
 
+
+
+
+function alternarPagina(pagina)
+{
+    console.log(" ola ")
+if(pagina=="Home"){
+    var home =document.querySelector(".home-content")
+    home.classList.remove("esconder")
+    console.log(home)
+   
+    var skate = document.querySelector(".skate-content")
+   skate.classList.add("esconder")
+   console.log(skate)
+}
+
+
+
+}
+
+
+
+
+
+
 // trocar os valores das variaveis //
 
 let a = 7 
