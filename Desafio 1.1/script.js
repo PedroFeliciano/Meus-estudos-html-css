@@ -100,18 +100,45 @@ function interval()
 
 function alternarPagina(pagina)
 {
-    console.log(" ola ")
-if(pagina=="Home"){
     var home =document.querySelector(".home-content")
+    var skate= document.querySelector(".skate-content")
+
+     // esconder todos//
+home.classList.add("esconder")
+skate.classList.add("esconder")
+clouthes.classList.add("esconder")
+acessoreis.classList.add("esconder")
+story.classList.add("esconder")
+    
+if(pagina=="Home"){
+    
+     // remove o esconder de home //
+
     home.classList.remove("esconder")
-    console.log(home)
-   
-    var skate = document.querySelector(".skate-content")
-   skate.classList.add("esconder")
-   console.log(skate)
+    
+   // adiciona o esconder do skate //
 }
+ else if(pagina=="Skate")
+ {
+skate.classList.remove("esconder")
+  }
+ 
+  else if(pagina=="Clouthes")
+ {
 
+clouthes.classList.remove("esconder")
+  }
+ 
+  else if(pagina=="Acessories")
+ {
 
+acessoreis.classList.remove("esconder")
+  }
+  else if(pagina=="Story")
+ {
+
+story.classList.remove("esconder")
+  }
 
 }
 
