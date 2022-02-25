@@ -123,18 +123,11 @@ if(pagina=="Home"){
 skate.classList.remove("esconder")
   }
  
-  else if(pagina=="Clouthes")
- {
+else if(pagina=="clouthes")
 
-clouthes.classList.remove("esconder")
-  }
+console.log("ok")
  
-  else if(pagina=="Acessories")
- {
 
-acessoreis.classList.remove("esconder")
-  }
-  else if(pagina=="Story")
  {
 
 story.classList.remove("esconder")
