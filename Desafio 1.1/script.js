@@ -102,7 +102,9 @@ function alternarPagina(pagina)
 {
     var home =document.querySelector(".home-content")
     var skate= document.querySelector(".skate-content")
-
+    var clouthes =document.querySelector(".clouthes-content")
+    var acessoreis=document.querySelector(".acessories-content")
+    var story=document.querySelector(".story-content")
      // esconder todos//
 home.classList.add("esconder")
 skate.classList.add("esconder")
@@ -123,14 +125,12 @@ if(pagina=="Home"){
 skate.classList.remove("esconder")
   }
  
-else if(pagina=="clouthes")
 
 console.log("ok")
  
 
  {
 
-story.classList.remove("esconder")
   }
 
 }
