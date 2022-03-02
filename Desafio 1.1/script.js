@@ -1,64 +1,55 @@
 
-function clicado()
-
-{
+function clicado() {
     console.log("clicado")
 }
 
 // popap
-function alerta(mensagem)
-{
-window.alert("essa mensagem vem do "+ mensagem)
+function alerta(mensagem) {
+    window.alert("essa mensagem vem do " + mensagem)
 
 }
 
-function toggle(btnIndexador)
- {
+function toggle(btnIndexador) {
     console.log("entroou na funçao")
 
     var elements = document.querySelectorAll(".btn")
 
     console.log(elements)
     // For
-    console.log("O length é " + elements.length )
-    for (let index = 0; index < elements.length; index++)
-    {
+    console.log("O length é " + elements.length)
+    for (let index = 0; index < elements.length; index++) {
         const element = elements[index];
-        if(element.classList.contains("ativo"))
-        {
+        if (element.classList.contains("ativo")) {
             element.classList.toggle("ativo")
             console.log("Tirou o ativo")
         }
 
-        if(btnIndexador == index)
-        {
+        if (btnIndexador == index) {
             element.classList.toggle("ativo")
         }
 
     }
 
 
-   var soma = Soma(3,4)
+    var soma = Soma(3, 4)
 }
 
-function Soma(a, b)
-{
+function Soma(a, b) {
     return a + b;
 }
 
-function Subtracao(a, b)
-{
-return a -b;
+function Subtracao(a, b) {
+    return a - b;
 }
 
 
 let preço = 19.90;
-let desconto = 0.4 ;
+let desconto = 0.4;
 
-console.log( preço * (1- desconto) )
+console.log(preço * (1 - desconto))
 
- // ulltilizado para saber o tipo//
-console.log(typeof preço)   
+// ulltilizado para saber o tipo//
+console.log(typeof preço)
 
 // caulculo da circunferencia //
 
@@ -66,72 +57,72 @@ const PI = 3.14;
 
 let raio = 10;
 
-circunferencia = PI *raio  * raio + " m2"
+circunferencia = PI * raio * raio + " m2"
 
 console.log(circunferencia)
 
 
 var img1 = "'https://images.pexels.com/photos/7646486/pexels-photo-7646486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-var img2 ="https://images.pexels.com/photos/5560376/pexels-photo-5560376.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+var img2 = "https://images.pexels.com/photos/5560376/pexels-photo-5560376.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
 var img3 = "https://images.pexels.com/photos/5560210/pexels-photo-5560210.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
-var listaImg = [img1,img2,img3]
+var listaImg = [img1, img2, img3]
 
 let counter = 0;
-function interval()
-{
-    setInterval(function()
-    {
+function interval() {
+    setInterval(function () {
         var divImgContent = document.querySelector(".img-content")
         console.log("changed")
-        divImgContent.style.background =  `linear-gradient(rgba(0,0,0,.5) ,rgba(0,0,0,.5)), url('${listaImg[counter]}')`
+        divImgContent.style.background = `linear-gradient(rgba(0,0,0,.5) ,rgba(0,0,0,.5)), url('${listaImg[counter]}')`
         divImgContent.style.backgroundSize = "cover"
 
         counter = counter + 1;
-        if(counter >2)
-        {
-            counter= 0 
-        } 
- console.log(counter)
-},4000)
+        if (counter > 2) {
+            counter = 0
+        }
+        console.log(counter)
+    }, 4000)
 }
 
 
 
 
-function alternarPagina(pagina)
-{
-    var home =document.querySelector(".home-content")
-    var skate= document.querySelector(".skate-content")
-    var clouthes =document.querySelector(".clouthes-content")
-    var acessoreis=document.querySelector(".acessories-content")
-    var story=document.querySelector(".story-content")
-     // esconder todos//
-home.classList.add("esconder")
-skate.classList.add("esconder")
-clouthes.classList.add("esconder")
-acessoreis.classList.add("esconder")
-story.classList.add("esconder")
-    
-if(pagina=="Home"){
-    
-     // remove o esconder de home //
+function alternarPagina(pagina) {
+    var home = document.querySelector(".home-content")
+    var skate = document.querySelector(".skate-content")
+    var clouthes = document.querySelector(".clouthes-content")
+    var acessories = document.querySelector(".acessories-content")
+    var story = document.querySelector(".story-content")
+    // esconder todos//
+    home.classList.add("esconder")
+    skate.classList.add("esconder")
+    clouthes.classList.add("esconder")
+    acessories.classList.add("esconder")
+    story.classList.add("esconder")
 
-    home.classList.remove("esconder")
-    
-   // adiciona o esconder do skate //
-}
- else if(pagina=="Skate")
- {
-skate.classList.remove("esconder")
-  }
- 
+    if (pagina == "home") {
 
-console.log("ok")
- 
+        // remove o esconder de home //
 
- {
+        home.classList.remove("esconder")
 
-  }
+        // adiciona o esconder do skate //
+    }
+    else if (pagina == "skate") {
+        skate.classList.remove("esconder")
+    }
+    else if (pagina == "clouthes") {
+        clouthes.classList.remove("esconder")
+        console.log("coulthes ok")
+    }
+    else if (pagina == "acessories") {
+        acessories.classList.remove("esconder")
+        console.log("acessories ok")
+    }
+    else if (pagina == "story") {
+        story.classList.remove("esconder")
+        console.log("Story ok")
+    }
+  
 
 }
 
@@ -142,14 +133,14 @@ console.log("ok")
 
 // trocar os valores das variaveis //
 
-let a = 7 
+let a = 7
 let b = 94
 
 
 let c = a
 
-a=b
-b=c
+a = b
+b = c
 
 console.log(a)
 console.log(b)
