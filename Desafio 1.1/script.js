@@ -99,29 +99,27 @@ function alternarPagina(pagina) {
     acessories.classList.add("esconder")
     story.classList.add("esconder")
 
-    if (pagina == "home") {
+    switch (pagina)
+    {
+        case "home":
+            home.classList.remove("esconder")
+         break;
+         case "skate":
+            skate.classList.remove("esconder")
+         break;
+        case "clouthes":
+         clouthes.classList.remove("esconder")
+             break;    
+             case"acessories":
+             acessories.classList.remove("esconder")
+             break
+             case "story":
+            story.classList.remove("esconder")      
+             break
+         default:
+            break;
+    }
 
-        // remove o esconder de home //
-
-        home.classList.remove("esconder")
-
-        // adiciona o esconder do skate //
-    }
-    else if (pagina == "skate") {
-        skate.classList.remove("esconder")
-    }
-    else if (pagina == "clouthes") {
-        clouthes.classList.remove("esconder")
-        console.log("coulthes ok")
-    }
-    else if (pagina == "acessories") {
-        acessories.classList.remove("esconder")
-        console.log("acessories ok")
-    }
-    else if (pagina == "story") {
-        story.classList.remove("esconder")
-        console.log("Story ok")
-    }
   
 
 }
@@ -141,8 +139,5 @@ let c = a
 
 a = b
 b = c
-
-console.log(a)
-console.log(b)
 
 
