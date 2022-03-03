@@ -20,12 +20,12 @@ function toggle(btnIndexador) {
     for (let index = 0; index < elements.length; index++) {
         const element = elements[index];
         if (element.classList.contains("ativo")) {
-            element.classList.toggle("ativo")
+            element.classList.remove("ativo")
             console.log("Tirou o ativo")
         }
 
         if (btnIndexador == index) {
-            element.classList.toggle("ativo")
+            element.classList.add("ativo")
         }
 
     }
@@ -86,7 +86,7 @@ function interval() {
 
 
 
-function alternarPagina(pagina) {
+function alternarPagina(pagina,btnIndexador) {
     var home = document.querySelector(".home-content")
     var skate = document.querySelector(".skate-content")
     var clouthes = document.querySelector(".clouthes-content")
@@ -119,8 +119,19 @@ function alternarPagina(pagina) {
          default:
             break;
     }
+    var elements = document.querySelectorAll(".btn")
+    for (let index = 0; index < elements.length; index++) {
+        const element = elements[index];
+        if (element.classList.contains("ativo")) {
+            element.classList.remove("ativo")
+            console.log("Tirou o ativo")
+        }
 
-  
+        if (btnIndexador == index) {
+            element.classList.add("ativo")
+        }
+
+    }
 
 }
 
